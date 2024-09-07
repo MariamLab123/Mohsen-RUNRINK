@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsen RUNRINK</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+            text-decoration:none;
+            font-family:sans-serif;
+        }
+        body{
+            background-color:azure;
+        }
+        .con{
+            width:85%;
+            height:auto;
+            background-color:brown;
+            padding:10px;
+            margin:10px;
+            border-radius:10px;
+        }
+        .in{
+            background-color:azure;
+            font-size:20px;
+            width:90%;
+            outline:none;
+        }
+        .run{
+            background-color:blueviolet;
+            width:80%;
+            font-size:20px;
+            color:white;
+            border-radius:20px;
+            margin:10px;
+            padding:5px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2 style="margin:10px;">We need your mohsen account</h2>
+        <div class="con">
+            <center>
+                <h3 style="margin:10px;">Please enter your password</h3>
+                <input placeholder="Enter to open the app" class="in" id="in" type="password">
+                <h1 style="margin:10px;"></h1>
+                <p>The mohsen account privacy&security is <font color="white"><b>ON</b></font></p>
+                <h1 style="margin:10px;"></h1>
+                <a href="run.html"><button class="run">Open</button></a>
+            </center>
+        </div>
+    </center>
+    <script>
+        let inn = document.getElementById("in");
+        let run = document.getElementsByClassName("run")[0];
+        inn.onkeyup = function(){
+            if(inn.value=="global123"){
+                run.style.display="block";
+            }
+            else if(inn.value=="s123remas123"){
+                run.style.display="block";
+            }
+            else if(inn.value=="jazz"){
+                run.style.display="block";
+            }
+            else{
+                run.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
